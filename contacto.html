@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <!-- etiqueta de seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="description" content="Formulario de contacto de Francisco Gomez.">
+    <title>Contacto | Francisco Gomez</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Contacto</h1>
+    <header class="cabecera">
+        <a class="cabecera-marca" href="index.html">Francisco Gomez</a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <ul class="menu-lista">
+                <li><a class="menu-enlace" href="index.html">Inicio</a></li>
+                <li><a class="menu-enlace" href="acerca.html">Acerca de</a></li>
+                <li><a class="menu-enlace" href="proyectos.html">Proyectos</a></li>
+                <li><a class="menu-enlace menu-enlace-activo" href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section aria-labelledby="contacto-titulo">
+            <h1 class="pagina-titulo" id="contacto-titulo">Contacto</h1>
+            <p class="pagina-texto">
+                Completa el formulario y te responderé lo antes posible. Los datos se validan
+                en el navegador antes de enviarse.
+            </p>
+
+            <!-- Formulario de práctica: no envía datos a un servidor real -->
+            <form class="formulario" action="#" method="post">
+                <div class="campo">
+                    <label class="campo-etiqueta" for="nombre">Nombre completo</label>
+                    <input class="campo-control" type="text" id="nombre" name="nombre" maxlength="60" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label class="campo-etiqueta" for="correo">Correo electrónico</label>
+                    <input class="campo-control" type="email" id="correo" name="correo" maxlength="100" autocomplete="email" required>
+                </div>
+
+                <div class="campo">
+                    <label class="campo-etiqueta" for="clave">Contraseña temporal</label>
+                    <input class="campo-control" type="password" id="clave" name="clave" minlength="8" autocomplete="new-password" required>
+                    <p class="campo-ayuda">Debe tener al menos 8 caracteres.</p>
+                </div>
+
+                <div class="campo">
+                    <label class="campo-etiqueta" for="asunto">Asunto</label>
+                    <select class="campo-control" id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="proyecto">Proyecto nuevo</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="consulta">Consulta general</option>
+                    </select>
+                </div>
+
+                <fieldset class="campo-grupo">
+                    <legend class="campo-etiqueta">¿Cómo prefieres que te contacte?</legend>
+                    <label><input type="radio" name="respuesta" value="correo" checked> Correo electrónico</label>
+                    <label><input type="radio" name="respuesta" value="telefono"> Teléfono</label>
+                </fieldset>
+
+                <div class="campo">
+                    <label class="campo-etiqueta" for="archivo">Archivo adjunto (PDF o imagen)</label>
+                    <input class="campo-control" type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="campo">
+                    <label class="campo-etiqueta" for="mensaje">Mensaje</label>
+                    <textarea class="campo-control" id="mensaje" name="mensaje" rows="5" maxlength="500" required></textarea>
+                </div>
+
+                <div class="campo campo-check">
+                    <label><input type="checkbox" id="terminos" name="terminos" title="Debes aceptar los términos y condiciones" required> Acepto los términos y condiciones</label>
+                </div>
+
+                <button class="boton" type="submit">Enviar mensaje</button>
+                <p class="formulario-nota">Todos los campos son obligatorios.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p class="pie-texto">© 2026 Francisco Gomez. Proyecto del Módulo 1.</p>
+    </footer>
 </body>
 </html>

@@ -1,8 +1,6 @@
 /* =========================================================
    style.css — Estilos comunes del portafolio
-   Mobile first
    ========================================================= */
-
 body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -322,4 +320,62 @@ ol {
 .tabla td::before {
     content: attr(data-label) ": ";
     font-weight: bold;
+}
+
+/* ---------- Contacto ---------- */
+.formulario {
+    display: grid;
+    gap: 1rem;
+    max-width: 560px;
+}
+
+.campo {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.campo-etiqueta {
+    font-weight: bold;
+}
+
+.campo-control {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    font: inherit;
+    color: inherit;
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+}
+
+.campo-control:focus {
+    outline: 2px solid #1f4e79;
+    outline-offset: 1px;
+}
+
+.campo-ayuda,
+.formulario-nota {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.campo-grupo {
+    display: grid;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.campo-grupo label,
+.campo-check label {
+    font-weight: normal;
+}
+
+.campo-grupo label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 }
