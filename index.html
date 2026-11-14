@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <!-- etiqueta de seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="description" content="Portafolio personal de Francisco Gomez, estudiante de desarrollo frontend.">
+    <title>Francisco Gomez | Portafolio</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Index</h1>
+    <header class="cabecera">
+        <a class="cabecera-marca" href="index.html">Francisco Gomez</a>
+        <nav class="menu" aria-label="Navegación principal">
+            <ul class="menu-lista">
+                <li><a class="menu-enlace menu-enlace-activo" href="index.html" aria-current="page">Inicio</a></li>
+                <li><a class="menu-enlace" href="acerca.html">Acerca de</a></li>
+                <li><a class="menu-enlace" href="proyectos.html">Proyectos</a></li>
+                <li><a class="menu-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal principal-inicio">
+        <section class="inicio" aria-labelledby="inicio-titulo">
+            <h1 class="inicio-titulo" id="inicio-titulo">Hola, soy Francisco Gomez</h1>
+            <p class="inicio-texto">
+                Estudiante de desarrollo frontend. Este es mi portafolio del Módulo 1,
+                hecho con HTML semántico y CSS.
+            </p>
+            <a class="boton" href="proyectos.html">Ver proyectos</a>
+        </section>
+
+        <aside class="datos" aria-labelledby="datos-titulo">
+            <h2 class="datos-titulo" id="datos-titulo">Datos rápidos</h2>
+            <ul class="datos-lista">
+                <li><strong>Rol:</strong> Estudiante de desarrollo frontend</li>
+                <li><strong>Tecnologías:</strong> HTML, CSS y JavaScript</li>
+                <li><strong>Herramientas:</strong> Git y GitHub</li>
+            </ul>
+        </aside>
+
+        <section class="sobre-mi" aria-labelledby="sobre-mi-titulo">
+            <h2 class="sobre-mi-titulo" id="sobre-mi-titulo">Sobre mí</h2>
+            <p class="sobre-mi-texto">
+                Estoy aprendiendo desarrollo web Front-End y este sitio es mi proyecto final del
+                Módulo 1. Me interesa crear páginas claras, fáciles de usar y adaptadas
+                a cualquier dispositivo y con la seguridad adecuada.
+                <br>
+                Me gusta aprender haciendo proyectos prácticos y cuidando que cada página sea clara y fácil de usar.
+                Este portafolio reúne los ejercicios del Módulo 1 del curso de Desarrollo en JavaScript.
+            </p>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p class="pie-texto">© 2026 Francisco Gomez. Proyecto del Módulo 1.</p>
+    </footer>
 </body>
 </html>
