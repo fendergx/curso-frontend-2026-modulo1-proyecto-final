@@ -242,3 +242,42 @@ ol {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* ---------- Acerca de ---------- */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.perfil-foto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+}
+
+.perfil-texto {
+    margin-bottom: 0.6rem;
+    color: #555555;
+}
+
+.perfil-texto:last-child {
+    margin-bottom: 0;
+}
+
+.listas {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.lista {
+    margin-bottom: 0;
+}
+
+.lista li {
+    margin-bottom: 0.3rem;
+}

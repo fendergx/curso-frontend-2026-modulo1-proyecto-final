@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de</title>
+    <!-- etiqueta de seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="description" content="Perfil académico y profesional de Francisco Gomez, estudiante de desarrollo frontend.">
+    <title>Acerca de | Francisco Gomez</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Acerca de</h1>
+    <header class="cabecera">
+        <a class="cabecera-marca" href="index.html">Francisco Gomez</a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <ul class="menu-lista">
+                <li><a class="menu-enlace" href="index.html">Inicio</a></li>
+                <li><a class="menu-enlace menu-enlace-activo" href="acerca.html" aria-current="page">Acerca de</a></li>
+                <li><a class="menu-enlace" href="proyectos.html">Proyectos</a></li>
+                <li><a class="menu-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="perfil" aria-labelledby="perfil-titulo">
+            <img class="perfil-foto" src="src/img/profile.jpg" alt="Fotografía de Francisco Gomez" width="160" height="160">
+            <div>
+                <h1 class="pagina-titulo" id="perfil-titulo">Acerca de mí</h1>
+                <p class="perfil-texto">
+                    Soy Francisco Gomez, estudiante de desarrollo frontend. Me gusta aprender
+                    creando proyectos prácticos y cuidar que cada página sea clara y fácil de usar.
+                </p>
+                <p class="perfil-texto">
+                    Este portafolio reúne los ejercicios del Módulo 1 del curso de Desarrollo
+                    en JavaScript.
+                </p>
+            </div>
+        </section>
+
+        <div class="listas">
+            <section aria-labelledby="habilidades-titulo">
+                <h2 class="seccion-titulo" id="habilidades-titulo">Habilidades</h2>
+                <ul class="lista">
+                    <li>HTML semántico</li>
+                    <li>CSS responsivo</li>
+                    <li>JavaScript básico</li>
+                    <li>Validación de formularios</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="herramientas-titulo">
+                <h2 class="seccion-titulo" id="herramientas-titulo">Herramientas</h2>
+                <ul class="lista">
+                    <li>Vim</li>
+                    <li>Visual Studio Code</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Navegador con DevTools</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="intereses-titulo">
+                <h2 class="seccion-titulo" id="intereses-titulo">Áreas de interés</h2>
+                <ol class="lista">
+                    <li>Diseño de interfaces</li>
+                    <li>Accesibilidad web</li>
+                    <li>Seguridad web</li>
+                    <li>Desarrollo frontend</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <p class="pie-texto">© 2026 Francisco Gomez. Proyecto del Módulo 1.</p>
+    </footer>
 </body>
 </html>
