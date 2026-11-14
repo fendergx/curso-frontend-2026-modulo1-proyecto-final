@@ -162,3 +162,83 @@ ol {
     color: #666666;
 }
 
+/* ---------- media query's xd ---------- */
+
+/* Tablet */
+@media (min-width: 640px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .principal {
+        padding: 2.5rem 2rem;
+    }
+
+    .perfil {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tabla {
+        display: table;
+    }
+
+    .tabla thead {
+        display: table-header-group;
+    }
+
+    .tabla tbody {
+        display: table-row-group;
+    }
+
+    .tabla tr {
+        display: table-row;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .tabla th,
+    .tabla td {
+        display: table-cell;
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+    }
+
+    .tabla th {
+        background-color: #f4f4f4;
+    }
+
+    .tabla td::before {
+        content: none;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 900px) {
+    .principal-inicio {
+        grid-template-columns: 1fr 260px;
+        align-items: start;
+    }
+
+    .inicio {
+        grid-column: 1 / -1;
+    }
+
+    .sobre-mi {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .datos {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .listas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
