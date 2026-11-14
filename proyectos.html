@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <!-- etiqueta de seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="description" content="Proyectos realizados por Francisco Gomez durante el Módulo 1.">
+    <title>Proyectos | Francisco Gomez</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Proyectos</h1>
+    <header class="cabecera">
+        <a class="cabecera-marca" href="index.html">Francisco Gomez</a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <ul class="menu-lista">
+                <li><a class="menu-enlace" href="index.html">Inicio</a></li>
+                <li><a class="menu-enlace" href="acerca.html">Acerca de</a></li>
+                <li><a class="menu-enlace menu-enlace-activo" href="proyectos.html" aria-current="page">Proyectos</a></li>
+                <li><a class="menu-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section aria-labelledby="proyectos-titulo">
+            <h1 class="pagina-titulo" id="proyectos-titulo">Proyectos</h1>
+            <p class="pagina-texto">Estos son algunos de los trabajos que he realizado durante el curso.</p>
+
+            <table class="tabla">
+                <caption class="tabla-caption">Proyectos del Módulo 1</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Tecnologías</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Proyecto">Landing personal</td>
+                        <td data-label="Tecnologías">HTML, CSS</td>
+                        <td data-label="Fecha">Noviembre 2026</td>
+                        <td data-label="Estado">Terminado</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Proyecto">Página Acerca de</td>
+                        <td data-label="Tecnologías">HTML, CSS</td>
+                        <td data-label="Fecha">Noviembre 2026</td>
+                        <td data-label="Estado">Terminado</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Proyecto">Tabla de proyectos</td>
+                        <td data-label="Tecnologías">HTML, CSS</td>
+                        <td data-label="Fecha">Noviembre 2026</td>
+                        <td data-label="Estado">Terminado</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Proyecto">Formulario de contacto</td>
+                        <td data-label="Tecnologías">HTML, CSS, validación</td>
+                        <td data-label="Fecha">Noviembre 2026</td>
+                        <td data-label="Estado">Terminado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p class="pie-texto">© 2026 Francisco Gomez. Proyecto del Módulo 1.</p>
+    </footer>
 </body>
 </html>

@@ -281,3 +281,45 @@ ol {
 .lista li {
     margin-bottom: 0.3rem;
 }
+
+/* ---------- Proyectos ---------- */
+.tabla {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.tabla-caption {
+    margin-bottom: 0.75rem;
+    text-align: left;
+    color: #555555;
+}
+
+/* En móvil la tabla se muestra como tarjetas */
+.tabla thead {
+    display: none;
+}
+
+.tabla tbody,
+.tabla tr,
+.tabla td {
+    display: block;
+}
+
+.tabla tr {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.tabla td {
+    padding: 0.25rem 0;
+}
+
+.tabla td::before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+}
